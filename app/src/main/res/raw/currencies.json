@@ -1,0 +1,191 @@
+[{
+	"id": 1,
+	"name": "Bitcoin",
+	"symbol": "BTC",
+	"slug": "bitcoin"
+}, {
+	"id": 2,
+	"name": "Litecoin",
+	"symbol": "LTC",
+	"slug": "litecoin"
+}, {
+	"id": 3,
+	"name": "Namecoin",
+	"symbol": "NMC",
+	"slug": "namecoin"
+}, {
+	"id": 4,
+	"name": "Terracoin",
+	"symbol": "TRC",
+	"slug": "terracoin"
+}, {
+	"id": 5,
+	"name": "Peercoin",
+	"symbol": "PPC",
+	"slug": "peercoin"
+}, {
+	"id": 6,
+	"name": "Novacoin",
+	"symbol": "NVC",
+	"slug": "novacoin"
+}, {
+	"id": 8,
+	"name": "Feathercoin",
+	"symbol": "FTC",
+	"slug": "feathercoin"
+}, {
+	"id": 9,
+	"name": "Mincoin",
+	"symbol": "MNC",
+	"slug": "mincoin"
+}, {
+	"id": 10,
+	"name": "Freicoin",
+	"symbol": "FRC",
+	"slug": "freicoin"
+}, {
+	"id": 13,
+	"name": "Ixcoin",
+	"symbol": "IXC",
+	"slug": "ixcoin"
+}, {
+	"id": 14,
+	"name": "BitBar",
+	"symbol": "BTB",
+	"slug": "bitbar"
+}, {
+	"id": 16,
+	"name": "WorldCoin",
+	"symbol": "WDC",
+	"slug": "worldcoin"
+}, {
+	"id": 18,
+	"name": "Digitalcoin",
+	"symbol": "DGC",
+	"slug": "digitalcoin"
+}, {
+	"id": 25,
+	"name": "GoldCoin",
+	"symbol": "GLD",
+	"slug": "goldcoin"
+}, {
+	"id": 31,
+	"name": "Argentum",
+	"symbol": "ARG",
+	"slug": "argentum"
+}, {
+	"id": 32,
+	"name": "Fastcoin",
+	"symbol": "FST",
+	"slug": "fastcoin"
+}, {
+	"id": 35,
+	"name": "Phoenixcoin",
+	"symbol": "PXC",
+	"slug": "phoenixcoin"
+}, {
+	"id": 37,
+	"name": "Megacoin",
+	"symbol": "MEC",
+	"slug": "megacoin"
+}, {
+	"id": 41,
+	"name": "Infinitecoin",
+	"symbol": "IFC",
+	"slug": "infinitecoin"
+}, {
+	"id": 42,
+	"name": "Primecoin",
+	"symbol": "XPM",
+	"slug": "primecoin"
+}, {
+	"id": 43,
+	"name": "Anoncoin",
+	"symbol": "ANC",
+	"slug": "anoncoin"
+}, {
+	"id": 45,
+	"name": "CasinoCoin",
+	"symbol": "CSC",
+	"slug": "casinocoin"
+}, {
+	"id": 49,
+	"name": "Bullion",
+	"symbol": "CBX",
+	"slug": "bullion"
+}, {
+	"id": 50,
+	"name": "Emerald Crypto",
+	"symbol": "EMD",
+	"slug": "emerald"
+}, {
+	"id": 52,
+	"name": "XRP",
+	"symbol": "XRP",
+	"slug": "ripple"
+}, {
+	"id": 53,
+	"name": "Quark",
+	"symbol": "QRK",
+	"slug": "quark"
+}, {
+	"id": 56,
+	"name": "Zetacoin",
+	"symbol": "ZET",
+	"slug": "zetacoin"
+}, {
+	"id": 57,
+	"name": "SecureCoin",
+	"symbol": "SRC",
+	"slug": "securecoin"
+}, {
+	"id": 58,
+	"name": "Sexcoin",
+	"symbol": "SXC",
+	"slug": "sexcoin"
+}, {
+	"id": 61,
+	"name": "TagCoin",
+	"symbol": "TAG",
+	"slug": "tagcoin"
+}, {
+	"id": 63,
+	"name": "I0Coin",
+	"symbol": "I0C",
+	"slug": "i0coin"
+}, {
+	"id": 64,
+	"name": "FLO",
+	"symbol": "FLO",
+	"slug": "flo"
+}, {
+	"id": 66,
+	"name": "Nxt",
+	"symbol": "NXT",
+	"slug": "nxt"
+}, {
+	"id": 67,
+	"name": "Unobtanium",
+	"symbol": "UNO",
+	"slug": "unobtanium"
+}, {
+	"id": 68,
+	"name": "Joulecoin",
+	"symbol": "XJO",
+	"slug": "joulecoin"
+}, {
+	"id": 69,
+	"name": "Datacoin",
+	"symbol": "DTC",
+	"slug": "datacoin"
+}, {
+	"id": 70,
+	"name": "BetaCoin",
+	"symbol": "BET",
+	"slug": "betacoin"
+}, {
+	"id": 71,
+	"name": "GrandCoin",
+	"symbol": "GDC",
+	"slug": "grandcoin"
+}]
