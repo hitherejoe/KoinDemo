@@ -7,7 +7,8 @@ import co.joebirch.koindemo.data.DataRepositoryFactory
 import co.joebirch.koindemo.model.Currency
 
 class CurrenciesViewModel constructor(
-        private val dataRepositoryFactory: DataRepositoryFactory): ViewModel() {
+        private val dataRepositoryFactory: DataRepositoryFactory,
+        private val jsonString: String): ViewModel() {
 
     private val currencyLiveData = MutableLiveData<List<Currency>>()
 
@@ -15,7 +16,7 @@ class CurrenciesViewModel constructor(
         return currencyLiveData
     }
 
-    fun retrieveCurrencies(jsonString: String) {
+    fun retrieveCurrencies() {
         val data = dataRepositoryFactory.retrieveLocalSource().getCurrencies(jsonString)
         currencyLiveData.postValue(data)
     }
