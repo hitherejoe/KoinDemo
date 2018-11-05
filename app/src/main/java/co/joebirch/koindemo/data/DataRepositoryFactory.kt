@@ -1,6 +1,6 @@
 package co.joebirch.koindemo.data
 
-class DataRepositoryFactory constructor(
+open class DataRepositoryFactory constructor(
         private val localDataSource: DataRepository,
         private val remoteDataSource: DataRepository) {
 
