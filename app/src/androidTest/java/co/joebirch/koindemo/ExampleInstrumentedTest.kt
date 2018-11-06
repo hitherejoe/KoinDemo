@@ -10,7 +10,6 @@ import android.support.test.espresso.matcher.ViewMatchers.withText
 import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
 import android.support.v7.widget.RecyclerView
-import co.joebirch.koindemo.data.DataRepository
 import co.joebirch.koindemo.model.Currency
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.mock
