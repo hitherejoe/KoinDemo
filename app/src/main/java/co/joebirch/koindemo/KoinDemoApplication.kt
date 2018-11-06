@@ -7,7 +7,7 @@ class KoinDemoApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
-        startKoin(this, listOf(applicationModule, browseModule))
+        startKoin(this, listOf(applicationModule))
     }
 
 }

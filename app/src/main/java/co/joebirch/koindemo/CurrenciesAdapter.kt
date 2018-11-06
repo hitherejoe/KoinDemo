@@ -4,8 +4,8 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import co.joebirch.koindemo.model.Currency
-import co.joebirch.koindemo.presentation.CurrencyView
 
 class CurrenciesAdapter: RecyclerView.Adapter<CurrenciesAdapter.ViewHolder>() {
 
@@ -22,10 +22,13 @@ class CurrenciesAdapter: RecyclerView.Adapter<CurrenciesAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.currencyView.setCurrency(currencies[position])
+        val currency = currencies[position]
+        holder.nameText.text = currency.name
+        holder.symbolText.text = currency.symbol
     }
 
     inner class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        val currencyView: CurrencyView = view.findViewById(R.id.view_currency)
+        val nameText: TextView = view.findViewById(R.id.text_name)
+        val symbolText: TextView = view.findViewById(R.id.text_symbol)
     }
 }
