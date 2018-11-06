@@ -17,9 +17,7 @@ val applicationModule = module {
     factory<DataRepository>("remote") { RemoteDataRepository() }
 
     factory { DataRepositoryFactory(get("local"), get("remote")) }
-}
 
-val browseModule = module("browse") {
     factory { CurrenciesAdapter() }
-    viewModel { (jsonString: String) -> CurrenciesViewModel(get(), jsonString) }
+    viewModel { CurrenciesViewModel(get()) }
 }
