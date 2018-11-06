@@ -3,14 +3,14 @@ package co.joebirch.koindemo
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import co.joebirch.koindemo.data.DataRepository
+import co.joebirch.koindemo.data.DataRepositoryFactory
 import kotlinx.android.synthetic.main.activity_main.recycler_currencies
 import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
 
     val currenciesAdapter: CurrenciesAdapter by inject()
-    val dataRepository: DataRepository by inject()
+    val dataRepositoryFactory: DataRepositoryFactory by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val currenciesJson = resources.openRawResource(R.raw.currencies)
                 .bufferedReader().use { it.readText() }
-        val items = dataRepository.getCurrencies(currenciesJson)
+        val items = dataRepositoryFactory.retrieveLocalSource().getCurrencies(currenciesJson)
         currenciesAdapter.currencies = items
     }
 
