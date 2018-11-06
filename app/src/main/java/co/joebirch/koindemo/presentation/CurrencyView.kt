@@ -1,6 +1,7 @@
 package co.joebirch.koindemo.presentation
 
 import android.content.Context
+import android.net.Uri
 import android.util.AttributeSet
 import android.view.View
 import android.widget.LinearLayout
@@ -29,7 +30,8 @@ class CurrencyView @JvmOverloads constructor(
         text_symbol.text = currency.symbol
 
         setOnClickListener {
-            urlHelper.launchCurrencyUrl(context, currency.slug)
+            urlHelper.launchUrl(context,
+                    Uri.parse("http://www.coinmarketcap.com/currencies/${currency.slug}"))
         }
     }
 }
