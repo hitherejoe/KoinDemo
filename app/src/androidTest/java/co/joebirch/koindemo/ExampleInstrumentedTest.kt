@@ -13,20 +13,19 @@ import android.support.v7.widget.RecyclerView
 import co.joebirch.koindemo.data.DataRepository
 import co.joebirch.koindemo.model.Currency
 import com.nhaarman.mockito_kotlin.any
-import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.whenever
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.koin.dsl.module.module
-import org.koin.standalone.StandAloneContext.loadKoinModules
+import org.koin.standalone.inject
 import org.koin.test.KoinTest
+import org.koin.test.declareMock
 
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest: KoinTest {
 
-    private val mockDataRepository = mock<DataRepository>()
+    val mockDataRepository: DataRepository by inject()
 
     @Rule
     @JvmField
@@ -34,9 +33,7 @@ class ExampleInstrumentedTest: KoinTest {
 
     @Before
     fun setup() {
-        loadKoinModules(module(override = true) {
-            factory("local") { mockDataRepository }
-        })
+        declareMock<DataRepository>()
     }
 
     @Test
